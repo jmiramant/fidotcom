@@ -1,0 +1,45 @@
+.mod-footer
+  height: 101px
+  font-size: 0
+  text-align: right
+  background: $gray-dark
+  border-top: solid 1px #a2a2a2
+  border-bottom: solid 1px #a2a2a2
+  clear: both
+
+  .quickies
+    a
+      float: left
+      padding-top: 42px
+      padding-left: 40px
+      color: #b8b8b8
+      display: inline-block
+      font-family: 'Josefin Slab', Georgia, "Times New Roman", Times, serif
+      text-decoration: none
+      font-size: 16px
+      height: 1em
+    a:hover
+      color: #b8b8b8
+      text-decoration: none
+    a:active
+      color: #b8b8b8
+      text-decoration: none
+    a:visited
+      color: #b8b8b8
+      text-decoration: none
+
+  ul
+    padding: 31px 40px 0 0
+
+  li
+    display: inline-block
+    margin-left: 25px
+
+
+  @each $network in mail, twitter, facebook, youtube
+    .#{$network}
+      width: image-width("sprite/i_#{$network}.png")
+      height: 37px
+      display: block
+      background: sprite($sprite, i_#{$network})
+      +hide-text

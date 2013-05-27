@@ -1,0 +1,130 @@
+
+  <% content_for :stylesheets do %>
+    <title>Financial Literacy Month - Schools</title>
+    <link href="http://fonts.googleapis.com/css?family=Josefin+Slab:400,700" media="screen" rel="stylesheet" type="text/css" />
+    <%= stylesheet_link_tag 'FLM/flm.css' %>
+    <%= stylesheet_link_tag 'FLM/fancybox/jquery.fancybox-buttons.css' %>
+    <%= stylesheet_link_tag 'FLM/fancybox/jquery.fancybox-thumbs.css' %>
+    <%= stylesheet_link_tag 'FLM/fancybox/jquery.fancybox.css' %>
+  <% end %>
+
+    <div class="sidebar">
+      <div id="border">
+        <div class="homenav"><a href="/financialliteracymonth"><span>Home</span></a>
+        </div>
+        <div class="topnav" id="content1">
+          <h3>Get Involved</h3> 
+          <ul class="topnavlist">
+            <li><a href="/financialliteracymonth/schools">K-12 Educators</a></li>
+            <li><a href="/financialliteracymonth/sponsors">Sponsors</a></li>
+            <li><a href="/financialliteracymonth/highereducation">Higher Education</a></li>
+          </ul>
+        </div>
+        <div class="signup"><a href="http://na-sj02.marketo.com/lp/everfi/FLM_General-signup.html" class="various fancybox.iframe"><span>Contact</span></a>
+        </div>
+      </div>
+
+        <div class="blog_chalenge" ><a href="http://everfi.com/blog-competition" target="_blank"><span>Enter: Student Blog Challenge<br/><strong>Win $750</strong></span></a>
+        </div>
+</div>
+
+
+    <div class="school_length">
+      <div class="school_section1" id="school">
+        <%= image_tag "flm/k12_tag.png", id:"schoolimg" %> 
+        <h2>Prepare Your Students to Make<br />Sound Financial Decsions</h2>
+        <p class="schoolcopy">Saving, budgeting, or even earning money may not be top of mind for most teens, yet the financial knowledge they have now will set the tone for the decisions they make in their future. Today’s youth lack the basic understanding of personal finance that is necessary for future financial achievement, confidence, and well-being. In this economy, teaching personal finance at an early age is more important than ever.<p>
+          <div id="schoolwrap">
+            <div>
+              <a href="#formhead" class="scroll"><div class="schoolicon first-child" id="si1"><%= image_tag "flm/lifting.png" %><p id="textfit1">Empowered<br />Students</p></div>
+              <div class="schoolchild first-child"><p id="subtextfit1">Provide access to<br />financial literacy for a lifetime</p></div></a>
+            </div>
+
+            <div>
+              <a href="#formhead" class="scroll"><div class="schoolicon" id="si2"><%= image_tag "flm/interactive.png" %><p id="textfit2">Engaging<br />Platform</p></div>
+              <div class="schoolchild"><p>Stimulate student learning<br />with gaming and simulations</p></div>
+            </div>  </a>
+
+            <div>
+              <a href="#formhead" class="scroll"><div class="schoolicon" id="si3"><%= image_tag "flm/expand.png" %><p id="textfit3">Curriculum<br />Enhancement</p></div>
+              <div class="schoolchild"><p>Expand teacher effectiveness<br />with interactive co-curricular tools</p></div>
+            </div></a>
+
+            <div>
+              <a href="#formhead" class="scroll"><div class="schoolicon" id="si4"><%= image_tag "flm/assesment.png" %><p id="textfit4">Assessment<br />Data</p></div>
+              <div class="schoolchild"><p>Access rich data to<br />demonstrate student knowledge gain</p></div>
+            </div></a>
+
+            <div>
+              <a href="#formhead" class="scroll"><div class="schoolicon" id="si5"><%= image_tag "flm/free.png" %><p id="textfit5">No Cost<br />Solution</p></div>
+              <div class="schoolchild"><p>Leverage sponsors in your community<br />to get access to EverFi platforms</p></div></a>
+            </div>
+          </div>
+          <div id="banner">
+            <%= image_tag "flm/banner.png", id: "ltflg" %>
+          </div>
+        </div>
+        <div class="jumpschool">
+          <a href="#formhead" class="scroll down_arrow"></a>
+        </div>
+      </div>
+      <div class="school_section2">
+        <div><h2 id="formhead">Bring EverFi to Your School...</h2></div>
+        <p class="signupcopy_schools">Join thousands of schools across the country that are helping students take charge of their financial futures.<br /><br />Getting started is easy. Sign up today.</p>
+      <div id="school_wrap_column1">
+        <div id="schoolVid1">
+          <h2></strong>Vault</strong>: 4th - 6th Grade</h2>
+          <a class="various fancybox.iframe" title="Vault Course Overview" href="http://www.youtube.com/embed/YWtGU8YrwD4"><%= image_tag "flm/Vault_Video.png" %></a>
+        </div><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br /><br /><br /><br />
+        <div id="schoolVid2">
+          <h2></strong>EverFi</strong>: High School</h2> 
+          <a class="various fancybox.iframe" title="EverFi Course Overview" href="http://www.youtube.com/embed/44QWf11zF0Y"><%= image_tag "flm/fi_video" %></a>
+        </div>
+      </div>
+      <div id="school_wrap_column2">
+        <div id="schoolform">
+          <div id="fromtitle"><h2 id="school_form_title">Sign Up to<br/>Get Invovled</h2></div>
+          <form class="lpeRegForm formNotEmpty" id="formstyle" method="post" enctype="application/x-www-form-urlencoded" action="http://app-sj02.marketo.com/index.php/leadCapture/save" id="mktForm_7" name="mktForm_7" _lpchecked="1"><ul class="mktLblLeft"><li class="mktFormReq mktField"><label>First Name:</label><br /><span class="mktInput"><input class="mktFormText mktFormString mktFReq whtspc" name="FirstName" id="FirstName" type="text" value="" maxlength="255" tabindex="1"><span class="mktFormMsg"></span></span></li>
+<li class="mktFormReq mktField"><label>Last Name:</label><br /><span class="mktInput"><input class="mktFormText mktFormString mktFReq whtspc" name="LastName" id="LastName" type="text" value="" maxlength="255" tabindex="2"><span class="mktFormMsg"></span></span></li>
+<li class="mktFormReq mktField"><label>School</label><br /><span class="mktInput"><input class="mktFormText mktFormString mktFReq whtspc" name="Company" id="Company" type="text" value="" maxlength="255" tabindex="3"><span class="mktFormMsg"></span></span></li>
+<li class="mktFormReq mktField"><label>Title:</label><br /><span class="mktInput"><input class="mktFormText mktFormString mktFReq whtspc" name="Title" id="Title" type="text" value="" maxlength="255" tabindex="4"><span class="mktFormMsg"></span></span></li>
+<li class="mktFormReq mktField"><label>Email Address:</label><br /><span class="mktInput"><input class="mktFormText mktFormEmail mktFReq whtspc" name="Email" id="Email" type="text" value="" maxlength="255" tabindex="5"><span class="mktFormMsg"></span></span></li>
+<li class="mktField"><label>Phone Number:</label><br /><span class="mktInput"><input class="mktFormText mktFormPhone whtspc" name="Phone" id="Phone" type="text" value="" maxlength="255" tabindex="6"><span class="mktFormMsg"></span></span></li>
+<li id="mktFrmButtons"><label>&nbsp;</label><input id="mktFrmSubmit" type="submit" style="width: auto; overflow: visible; padding-left: .25em; padding-right: .25em;" value="Submit" name="submitButton" onclick="formSubmit(document.getElementById(&quot;mktForm_7&quot;)); return false;">&nbsp;<input style="display: none;" id="mktFrmReset" type="reset" value="Clear" name="resetButton" onclick="formReset(document.getElementById(&quot;mktForm_7&quot;)); return false;"></li>  </ul>
+  <span style="display:none;"><input type="text" name="_marketo_comments" value=""></span>
+  <input type="hidden" name="lpId" value="-1">
+  <input type="hidden" name="subId" value="180">
+  <input type="hidden" name="munchkinId" value="410-YCZ-984">
+  <input type="hidden" name="kw" value="">
+  <input type="hidden" name="cr" value="">
+  <input type="hidden" name="searchstr" value="">
+  <input type="hidden" name="lpurl" value="http://na-sj02.marketo.com/lp/everfi/FLM_School-signup.html?cr={creative}&amp;kw={keyword}">
+  <input type="hidden" name="formid" value="7">
+  <input type="hidden" name="returnURL" value="http://na-sj02.marketo.com/lp/everfi/FLMThankYou.html">
+  <input type="hidden" name="retURL" value="http://na-sj02.marketo.com/lp/everfi/FLMThankYou.html">
+  <input type="hidden" name="returnLPId" value="-1">
+  <input type="hidden" name="_mkt_disp" value="return">
+      <input type="hidden" name="_mkt_trk" value="">
+  </form>
+</div>
+<div id="school_wrap_column3">
+  <div id="downldbx_schools"><a href="http://everfimkt.s3.amazonaws.com/Website/SocializatonFinLitFINAL3_28.pdf" target="_blank">
+          <p><span style="font-size:15px">Download our latest</span> <strong>Insight Report: </strong><br/><span style="font-size:15px"><em>Role of Parents in Shaping Teens' Financial Literacy</em></span></p>
+          <%= image_tag "flm/Download.png" %></a>
+        </div>
+        <div id="infobox_schools"><a href="http://everfi.com/myths-of-teens-and-money-infographic" target="_blank">
+          <%= image_tag "flm/inograph.png" %>
+            <p>INFORGRAPHIC: <strong>Myths of Teens and Money</strong></p></a></div>
+          </div>
+        </div>
+
+        <div class="topreturn">
+          <div class="upYellow"><a href="/financialliteracymonth">
+            <%= image_tag "flm/upYellow.png" %>
+            <p>TOP<p>
+            </a></div>
+            <div class="rightYellow"><a href="http://everfi.com/"><%= image_tag "flm/rightYellow.png" %><p>HOME</p></a></div>
+          </div>
+        </div>
+<!-- FancyBox -->
+<%= render "custom_pages/flm_js" %>

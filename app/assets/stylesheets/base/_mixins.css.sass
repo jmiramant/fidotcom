@@ -1,0 +1,13 @@
+// Hide an element while still being readable for screen readers.
+=hide
+  left: -9999px
+  position: absolute
+
+// Use a base64 encoded inline image, with fallback.
+=data-uri-bg($image, $properties: false)
+  @if $properties != false
+    background: inline-image($image) $properties
+    *background: image-url($image) $properties
+  @else
+    background: inline-image($image) no-repeat
+    *background: image-url($image) no-repeat

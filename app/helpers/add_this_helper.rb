@@ -1,0 +1,2 @@
+module AddThisHelper
+end

@@ -1,0 +1,104 @@
+.mod-header
+  height: 118px
+  position: relative
+  font-family: $font-josefin
+  background: $gray-dark
+  border-bottom: solid 1px #959595
+  z-index: 10
+
+  h1
+    width: 156px
+    height: 100px
+    top: 9px
+    left: 33px
+    position: absolute
+    +hide-text
+    +data-uri-bg("everfi.png")
+
+
+    a
+      display: block
+      height: 100px
+
+  a
+    text-decoration: none
+
+  .primary
+    right: 33px
+    top: 62px
+    position: absolute
+
+    > li
+      position: relative
+      float: left
+      margin-left: 50px
+      font-size: 19px
+      line-height: 18px
+
+      &:first-child
+        margin: 0
+
+      &:hover
+        > a
+          border-bottom: solid 6px $contrast
+
+        .sub
+          display: block
+
+      > a
+        height: 34px
+        float: left
+        padding-bottom: 6px
+        font-weight: 600
+        color: #b3b3b3
+
+        > span
+          display: block
+
+    .sub
+      top: 46px
+      left: -14px
+      right: -30px
+      position: absolute
+      display: none
+      padding: 14px 0 14px 21px
+      font-family: $font-family
+      font-size: 12px
+      text-transform: uppercase
+      line-height: 24.8px
+      background: $contrast
+      border-top: solid 1px $gray-dark
+      z-index: 10
+
+      .dot
+        width: 18px
+        height: 18px
+        top: -9px
+        left: 13px
+        position: absolute
+        display: block
+        +data-uri-bg("bg_menu.png")
+
+      a
+        color: #fff
+
+        &:hover
+          text-decoration: underline
+
+  .secondary
+    top: 0
+    right: 0
+    position: absolute
+
+    li
+      float: left
+      margin-left: 11px
+
+    a
+      float: left
+      padding: 0 18px
+      font-size: 12px
+      text-transform: uppercase
+      line-height: 21px
+      color: #fff
+      background: #6f7072

@@ -1,0 +1,101 @@
+.mod-slider
+  @extend .clearfix
+  height: 332px
+  clear: both
+  position: relative
+  margin-bottom: 2px
+
+  .slides > li
+    height: 332px
+    position: relative
+    line-height: 24px
+    color: #fff
+    overflow: hidden
+
+  .text
+    width: 243px
+    height: 298px
+    top: 0
+    right: 0
+    position: absolute
+    padding: 34px 40px 0 40px
+    background: $green
+
+  h2
+    margin-bottom: 20px
+    font-family: $font-josefin
+    font-size: 31px
+    font-weight: 600
+    line-height: 27px
+
+  figure
+    width: 697px
+    top: 0
+    left: 0
+    position: absolute
+
+  .flex-direction-nav
+    .flex-prev,
+    .flex-next
+      width: 90px
+      height: 89px
+      top: 241px
+      margin: 0
+      z-index: 999
+      +opacity(1)
+
+    .flex-prev
+      left: 3px
+      +data-uri-bg("arrow_back.png", 26px 26px no-repeat)
+
+    .flex-next
+      right: 3px
+      +data-uri-bg("arrow_next.png", 26px 26px no-repeat)
+
+.spon-slider
+  @extend .clearfix
+  height: 250px
+  clear: both
+  position: relative
+  margin-bottom: 2px
+
+  .slides > li
+    height: 250px
+    position: relative
+    line-height: 24px
+    color: #fff
+    overflow: hidden
+
+  .text
+    width: 243px
+    height: 298px
+    top: 0
+    right: 0
+    position: absolute
+    padding: 34px 40px 0 40px
+    background: $green
+
+  h2
+    margin-bottom: 20px
+    font-family: $font-josefin
+    font-size: 31px
+    font-weight: 600
+    line-height: 27px
+
+  .flex-direction-nav
+    .flex-prev,
+    .flex-next
+      width: 90px
+      height: 89px
+      top: 141px
+      margin: 0
+      z-index: 999
+      +opacity(1)
+
+    .flex-prev
+      left: 3px
+      +data-uri-bg("i_slider_prev_dark.png", 26px 26px no-repeat)
+
+    .flex-next
+      right: 3px
+      +data-uri-bg("i_slider_next_dark.png", 26px 26px no-repeat)

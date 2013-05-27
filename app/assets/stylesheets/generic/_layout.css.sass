@@ -1,0 +1,25 @@
+img
+  -ms-interpolation-mode: bicubic
+
+.clearfix
+  *display: inline-block
+  &:before,
+  &:after
+    content: ""
+    display: table
+  &:after
+    clear: both
+
+html
+  overflow-y: scroll
+
+body
+  min-width: 1020px
+  padding-bottom: 20px
+  background: #fff
+  -webkit-backface-visibility: hidden
+
+.wrap
+  width: 1020px
+  position: relative
+  margin: 0 auto

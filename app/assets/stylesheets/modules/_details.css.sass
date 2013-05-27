@@ -1,0 +1,50 @@
+.mod-details
+  @extend .clearfix
+  margin-bottom: 2px
+
+  > h1
+    @extend h1.section
+
+  .box_1,
+  .box_2,
+  .box
+    height: 223px
+    float: left
+    padding: 37px 40px
+    color: #fff
+    background: $gray
+
+    h2
+      margin-bottom: 15px
+      font-family: $font-josefin
+      font-size: 31px
+      font-weight: 600
+
+    p,
+    ul,
+    dl
+      margin-bottom: 24px
+      line-height: 24px
+
+    ul
+      @extend .clearfix
+
+    li
+      width: 141px
+      float: left
+      padding-left: 11px
+      +data-uri-bg("i_dot.png", left center no-repeat)
+
+    dt
+      font-weight: 600
+      text-transform: uppercase
+
+    dd
+      margin-bottom: 24px
+
+  .box_1
+    width: 540px
+    margin-right: 2px
+
+  .box_2
+    width: 318px

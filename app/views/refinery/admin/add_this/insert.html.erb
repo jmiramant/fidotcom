@@ -1,0 +1,38 @@
+
+<%= form_for @add_this, url: '/refinery/add_this/insert', remote: true, method: :post do |f| %>
+  <%= f.label :title, 'Title' %>
+  <%= f.text_field :title %>
+
+  <%= f.label :description, 'Description' %>
+  <%= f.text_field :description %>
+
+  <%= f.label :twitter do %>
+    <%= f.check_box :twitter %> Twitter
+  <% end %>
+  <%= f.label :facebook do %>
+    <%= f.check_box :facebook %> Facebook
+  <% end %>
+  <%= f.label :email do %>
+    <%= f.check_box :email %> Email
+  <% end %>
+  <%= f.label :pinterest do %>
+    <%= f.check_box :pinterest %> Pinterest
+  <% end %>
+<% end %>
+
+<%= render '/refinery/admin/form_actions', :f => nil,
+             :cancel_url => '',
+             :hide_delete => true,
+             :submit_button_text => 'Submit',
+             :cancel_button_text => "Cancel",
+             :cancel_title => nil %>
+
+
+  <script>
+    $(function(){
+      $('#submit_button').on('click', function(){
+        console.log("clicked")
+        $('form#new_add_this').submit();
+      })
+    });
+  </script>

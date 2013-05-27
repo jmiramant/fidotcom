@@ -1,0 +1,53 @@
+%header.mod-header
+  .wrap
+    %h1= link_to 'EverFi', '/'
+
+    %nav
+      %ul.primary
+        %li
+          = link_to '/financial-education' do
+            <span>Financial</span> Education
+          .sub
+            %ul
+              %li= link_to 'EverFi', '/everfi'
+              %li= link_to 'Vault', '/vault'
+              %li= link_to 'Buttonwood', '/buttonwood'
+              %li= link_to 'EverFi@Work', '/everfi-at-work'
+        %li
+          = link_to '/digital-education' do
+            <span>STEM</span> Education
+          .sub
+            %ul
+              %li= link_to 'Ignition', '/ignition'
+              %li= link_to 'STEM', '/digital-education'
+        %li
+          = link_to '/civic-education' do
+            <span>Civic</span> Education
+        %li
+          = link_to '/substance-abuse-prevention' do
+            <span>Substance Abuse</span> Prevention
+          .sub
+            %ul
+              %li= link_to 'AlcoholEdu-HS', '/alcoholedu-for-high-school'
+              %li= link_to 'AlcoholEdu', '/alcoholedu-for-college'
+              %li= link_to 'Haven', '/haven'
+              %li= link_to 'Coalition', '/the-alcohol-prevention-coalition'
+        %li
+          = link_to '/sponsors' do
+            <span>Sponsors</span> &amp; Partners
+        %li
+          = link_to '/about' do
+            About
+          .sub
+            %ul
+              %li= link_to 'People', '/about/people'
+              %li= link_to 'Careers', '/about/careers'
+              %li= link_to 'News', '/about/news/press-releases'
+              %li= link_to 'Investors', '/about/investors'
+
+
+      %ul.secondary
+        %li= link_to 'Login or register', 'http://finlit.everfi.net/', class: 'login-link'
+        %li= link_to 'Blog', 'http://blog.everfi.com/'
+        %li= link_to 'Contact', 'http://contact.everfi.com/contact-us-0'
+

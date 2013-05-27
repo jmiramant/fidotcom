@@ -1,0 +1,31 @@
+.mod-footernav
+  @extend .clearfix
+  height: 63px
+  margin-bottom: 2px
+  padding-top: 20px
+  font-family: $font-josefin
+  font-size: 34px
+  font-weight: 600
+  background: $contrast
+
+  a
+    height: 39px
+    display: inline-block
+    padding-top: 5px
+    text-decoration: none
+    color: #fff
+
+  li
+    float: right
+    margin: 0 40px
+
+    &:first-child
+      float: left
+
+  .back
+    padding-left: 60px
+    +data-uri-bg("i_prev.png", left center no-repeat)
+
+  .get
+    padding-right: 60px
+    +data-uri-bg("i_next.png", right center no-repeat)

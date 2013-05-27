@@ -1,0 +1,4 @@
+%nav.mod-footernav
+  %ul
+    %li= link_to copywriting("Back Link Text", scope: :body, phrase_type: 'string', page: @page, :default => "Take me home"), copywriting("Back Link URL", scope: :body, phrase_type: 'string', page: @page, :default => '/'), :class => 'back'
+    %li= link_to copywriting("Forward Link Text", scope: :body, phrase_type: 'string', page: @page), copywriting("Forward Link URL", scope: :body, phrase_type: 'string', page: @page), :class => 'get'

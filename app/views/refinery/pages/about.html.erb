@@ -1,0 +1,37 @@
+<aside class='side-nav'>
+  <% @about = Refinery::Page.find_by_slug('about') %>
+
+  <ul class='nav'>
+
+    <%= nav_link(@about, false) %>
+
+    <% @about.children.each do |child| %>
+      <%= nav_link(child) do %>
+        <% if child.children.any? %>
+          <ul class="subnav">
+            <% child.children.each do |sub_child| %>
+              <%= nav_link sub_child %>
+            <% end %>
+          </ul>
+        <% end %>
+      <% end %>
+    <% end %>
+
+  </ul>
+</aside>
+
+<section
+  id='body'
+  class='about <%= @page.parent.present? ? @page.parent.title.downcase : '' %>'>
+  <%=raw @page.content_for :body %>
+</section>
+
+<section id='bottom_image' class='about'>
+  <%=raw @page.content_for :bottom_image %>
+</section>
+
+<% if @page.title == 'Careers' %>
+  <%= render 'widgets/careers_widget' %>
+<% end %>
+
+<%= render 'refinery/footer_nav' %>

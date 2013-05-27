@@ -1,0 +1,38 @@
+= content_tag :div, class: copywriting("Highlight Color", phrase_type: 'string', page: @page) do
+  %article.mod-intro.gateway
+    =raw @page.content_for("Body")
+
+  %section.mod-carousel
+    %ul.tabs
+      - @page.children.each do |child|
+        %li= link_to child.title, '#'
+
+    .slides_wrap
+      %ul.slides
+        - @page.children.each do |child|
+          %li
+            .text
+              =raw child.content_for("Body")
+
+  %section.mod-testimonials
+    %h1 Testimonials
+    %blockquote.testimonial_1
+      %span
+        = copywriting("Testimonial 1", scope: :body, phrase_type: 'string', page: @page)
+        %footer
+          =raw copywriting('Testimonial 1 Attribution', scope: :body, phrase_type: 'string', page: @page)
+    %blockquote.testimonial_2
+      %span
+        = copywriting("Testimonial 2", scope: :body, phrase_type: 'string', page: @page)
+        %footer
+          =raw copywriting('Testimonial 2 Attribution', scope: :body, phrase_type: 'string', page: @page)
+    %blockquote.testimonial_3
+      %span
+        = copywriting("Testimonial 3", scope: :body, phrase_type: 'string', page: @page)
+        %footer
+          =raw copywriting('Testimonial 3 Attribution', scope: :body, phrase_type: 'string', page: @page)
+
+    %figure
+      =raw copywriting('Testimonial Section Image', scope: :body, phrase_type: 'wysiwyg', page: @page)
+
+=render 'refinery/footer_nav'

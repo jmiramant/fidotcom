@@ -1,0 +1,49 @@
+.careers-widget
+  -(1..12).each do |i|
+    = image_tag "careers-widget/img-#{i}.jpg", class: "image-#{i}", 'data-image' => i
+
+  .cover-1.cover(data-cover=1)
+    .cover-1-1.image-1.coverlet
+    .cover-1-2.image-6.coverlet
+      %h3 Perk #6: Location, Location, Location
+      %p Our DC office is located in Georgetown, just steps from the Circulator bus and Foggy Bottom Metro.
+      %a.button(href='/about/careers/current-openings') Work@EverFi
+
+  .cover-2.cover(data-cover=2)
+    .cover-2-1.coverlet
+      %h3 Perk #9: Great Health Benefits
+      %p EverFi offers comprehensive medical, vision and dental benefits. We even have a gym (kind of).  We want you to be healthy!
+    .cover-2-2.coverlet(data-cover=2)
+      %a.button(href='/about/careers/current-openings') Work@EverFi
+
+  .cover-3.cover(data-cover=3)
+    .cover-3-1.coverlet
+      %h3 
+        Perk #50: 
+        %br
+        Ideas Welcome
+      %p Every employee is given an amazing amount of responsibility, access to company leadership, and ability to influence company direction. We value your input.
+      %a.button(href='/about/careers/current-openings') Work@EverFi
+
+  .cover-4.cover(data-cover=4)
+    .cover-4-1.coverlet
+      %h3 Perk #35: Career Development
+      %p EverFi offers workshops, guest speakers, open source, and more.
+      %a.button(href='/about/careers/current-openings') Work@EverFi
+
+  .cover-5.cover(data-cover=5)
+    .cover-5-1.coverlet
+      %h3 
+        Perk #12: Great 
+        %br
+        Vacation Policy
+      %p Our vacation policy is “yes." We don’t track number of days. We simply take the time we need to be awesome at our jobs.
+    .cover-5-2.coverlet
+      %a.button(href='/about/careers/current-openings') Work@EverFi
+
+  .cover-6.cover(data-cover=6)
+    .cover-6-1.coverlet
+      %h3 Perk #46: Technology
+      %p New tools to be productive. That means MacBook Airs, the newest tech toys, and cloud file storage for employee freedom and ease of use.
+    .cover-6-2.coverlet
+      %a.button(href='/about/careers/current-openings') Work@EverFi

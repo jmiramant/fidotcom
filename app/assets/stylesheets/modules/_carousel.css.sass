@@ -1,0 +1,80 @@
+.mod-carousel
+  position: relative
+  margin-bottom: 2px
+  +data-uri-bg("bg_carousel.png", $gray-dark center top repeat-y)
+
+  .tabs
+    height: 91px
+    padding-left: 148px
+    background: $gray
+    border-bottom: solid 2px #fff
+
+    li
+      width: 200px
+      height: 91px
+      position: relative
+      float: left
+      margin-right: -27px
+      +data-uri-bg("bg_tab.png")
+
+      &.active
+        z-index: 2
+        +data-uri-bg("bg_tab_active.png")
+
+      a
+        height: 65px
+        display: block
+        padding: 26px 30px 0 42px
+        font-weight: 600
+        text-align: center
+        text-decoration: none
+        line-height: 20px
+        color: #fff
+
+  .slides_wrap
+    width: 804px
+    height: 419px
+    margin: 0 108px
+    overflow: hidden
+
+    li
+      width: 800px
+      height: 419px
+      background: $contrast
+
+  .text
+    padding: 108px 65px 0
+    color: #fff
+
+    h1
+      margin-bottom: 30px
+      font-family: $font-josefin
+      font-size: 31px
+      font-weight: 600
+
+      span
+        display: block
+        font-size: 69px
+        font-weight: bold
+
+    p
+      margin-bottom: 25px
+      line-height: 24px
+
+  .flex-direction-nav
+    .flex-prev,
+    .flex-next
+      width: 44px
+      height: 43px
+      top: auto
+      bottom: 178px
+      margin: 0
+      +opacity(1)
+
+    .flex-prev
+      left: 80px
+      +data-uri-bg("i_carousel_prev.png")
+
+    .flex-next
+      right: 80px
+      +data-uri-bg("i_carousel_next.png")

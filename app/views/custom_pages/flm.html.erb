@@ -1,0 +1,97 @@
+<% content_for :stylesheets do %>
+  <title>EverFi Celebrates Financial Literacy Month</title>
+  <link href="http://fonts.googleapis.com/css?family=Josefin+Slab:400,700" media="screen" rel="stylesheet" type="text/css" />
+  <%= stylesheet_link_tag 'FLM/flm.css' %>
+  <%= stylesheet_link_tag 'FLM/fancybox/jquery.fancybox-buttons.css' %>
+  <%= stylesheet_link_tag 'FLM/fancybox/jquery.fancybox-thumbs.css' %>
+  <%= stylesheet_link_tag 'FLM/fancybox/jquery.fancybox.css' %>
+<% end %>
+
+    <div class="sidebar">
+      <div id="border">
+        <div class="homenav"><a href="#fit" class="scroll"><span>Home</span></a>
+        </div>
+        <div class="topnav" id="content1">
+          <h3>Get Involved</h3> 
+          <ul class="topnavlist">
+            <li><a href="/financialliteracymonth/schools">K-12 Educators</a></li>
+            <li><a href="/financialliteracymonth/sponsors">Sponsors</a></li>
+            <li><a href="/financialliteracymonth/highereducation">Higher Education</a></li>
+          </ul>
+        </div>
+        <div class="signup"><a href="http://na-sj02.marketo.com/lp/everfi/FLM_General-signup.html" class="various fancybox.iframe"><span>Contact</span></a>
+        </div>
+      </div>
+    </div>
+    <!-- Top Story 1--> 
+    <div id="pgcolor">
+      <section class="top" id="pad">
+        <div id="outer">
+          <h2 id="first">EverFi Recognizes</h2><h1 id="flmhead">Financial Literacy Month</h1>
+          <p class="head intro">As Financial Literacy Month arrives each April, headlines paint a bleak picture of the state of financial literacy in the United States.  Many of the indicators are not good. <span style="font-weight:600">Fewer than 20 states </span>mandate a course in financial literacy as a high school graduation requirement. Add to that the fact that only <span style="font-weight:600">26% of parents feel well prepared </span>to teach their kids about basic personal finance.</p>
+          <a class="various fancybox.iframe" id="centering" title="The Importance of Financial Literacy Month" href="http://www.youtube.com/embed/o4TTO69lGHU?rel=0&showinfo=0">
+            <%= image_tag "flm/tom_vid_img.png" %>
+          </a>
+        </div>
+      </section>
+      <!-- NAV BUTTON -->
+      <div class="jump">
+        <a href="#hope" class="scroll down_arrow"></a>
+      </div>
+    </div>
+    <!-- Top Story 2-->
+    <div id="sectioncolortwo">
+      <article class="top" id="hope">
+        <div id="outer">
+          <h2 id="sectionhead">Education is the Solution</h2>
+          <p class="head intro2" id="white">Now is the time to address this issue head on. At EverFi, we've built partnerships between the public and private sector to empower students in over 5000 schools and certified more than 5.5 million students.<br />Institutions, schools, educators, and companies all have a role in preparing our students for a secure financial future.</p> 
+        </div>  
+        <div id="solution_wrap">
+          <div id="solution_tag"><%= image_tag "flm/banner.png", id: "solution_banner" %><p id="solution_path">Path to Financial Literacy</p></div>
+        <div class="solution_box"><p>1. Engage</p><%= image_tag "flm/solution_1.jpg" %></div>
+        <div class="solution_box"><p>2. Excite</p><%= image_tag "flm/solution_2.jpg" %></div>
+        <div class="solution_box"><p>3. Empower</p><%= image_tag "flm/solution_3.jpg" %></div>
+        </div>
+        <!-- FUNNEL PAGE -->
+      </article>
+      <div class="jumpmid">
+        <a class="scroll down_arrow" href="#mission"></a>
+      </div>
+    </div>  
+    <div id="funnel_bg">
+      <section class="top" id="mission">
+
+
+
+        <div id="outer">
+          <h2 class="funnelhead">This April, we all have an opportunity to make the headlines POSITIVE.</h2>  
+          <p class="head" id="involved">Learn how to get involved:</p>  
+        </div>
+        <div class="funnelWrap">
+          <a href="/financialliteracymonth/schools">
+            <div class="funnelbox" id="funnelSchool">K-12 Resources</div>
+            <div class="funnelchild"><p id="fcleft">Learn about EverFi’s adaptive learning platforms and our national network of schools</p><%= image_tag "flm/rightYellow.png", :id => "fclimg" %>
+            </div>
+          </a>
+          <a href="/financialliteracymonth/sponsors">
+            <div class="funnelbox" id="funnelCompany">Sponsor Resources</div>
+            <div class="funnelchild"><p id="fccenter">Hear more about how the private sector is fueling education innovation</p>
+              <%= image_tag "flm/rightYellow.png", :id => "fccimg" %>
+            </div>
+          </a>
+          <a href="/financialliteracymonth/highereducation">
+            <div class="funnelbox" id="funnelHe">Higher Education Resources</div>
+            <div class="funnelchild"><p id="fcright">Learn how we’re helping college students build a strong financial foundation</p>
+              <%= image_tag "flm/rightYellow.png", :id => "fcrimg" %>
+            </div>
+          </a>
+        </div>
+        <div id="bgimg1"></div>
+      </section>
+    </div>
+    
+
+
+<!-- VIDEO PLAYER -->
+
+<%= render "custom_pages/flm_js" %>

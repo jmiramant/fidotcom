@@ -1,0 +1,15 @@
+User-agent: *
+Disallow: /for_customers.php
+Disallow: /contact_us.php
+Disallow: /careers
+Disallow: /about_us.php
+Disallow: /press.php
+Disallow: /products.php
+Disallow: /certification.php
+Disallow: /for_schools.php
+Disallow: /index.php
+Disallow: /curriculum.php
+Disallow: /retention.php
+Disallow: /landing.php
+Disallow: /coupon.php
+Disallow: /for_teachers.php/for_schools.php

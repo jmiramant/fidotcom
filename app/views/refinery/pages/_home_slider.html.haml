@@ -1,0 +1,7 @@
+.text
+  %h2
+    / = locals[:page].title
+  %p
+    / =raw locals[:page].content_for("Body")
+%figure
+  =raw locals[:page].content_for("Image")

@@ -1,0 +1,117 @@
+
+  <% content_for :stylesheets do %>
+    <title>Financial Literacy Month - Higher Education</title>
+    <link href="http://fonts.googleapis.com/css?family=Josefin+Slab:400,700" media="screen" rel="stylesheet" type="text/css" />
+    <%= stylesheet_link_tag 'FLM/flm.css' %>
+    <%= stylesheet_link_tag 'FLM/fancybox/jquery.fancybox-buttons.css' %>
+    <%= stylesheet_link_tag 'FLM/fancybox/jquery.fancybox-thumbs.css' %>
+    <%= stylesheet_link_tag 'FLM/fancybox/jquery.fancybox.css' %>
+  <% end %>
+
+    <div class="sidebar">
+      <div id="border">
+        <div class="homenav"><a href="/financialliteracymonth"><span>Home</span></a>
+        </div>
+        <div class="topnav" id="content1">
+          <h3>Get Involved</h3> 
+          <ul class="topnavlist">
+            <li><a href="/financialliteracymonth/schools">K-12 Educators</a></li>
+            <li><a href="/financialliteracymonth/sponsors">Sponsors</a></li>
+            <li><a href="/financialliteracymonth//highereducation">Higher Education</a></li>
+          </ul>
+        </div>
+        <div class="signup"><a href="http://na-sj02.marketo.com/lp/everfi/FLM_General-signup.html" class="various fancybox.iframe"><span>Contact</span></a>
+        </div>
+      </div>
+    </div>
+    <div class="school_length">
+      <div class="he_section1" id="he">
+        <%= image_tag "flm/he_tag.png", id: "schoolimg" %>
+        <h2>Empower Students to<br />Navigate their Financial Future</h2>
+        <p class="schoolcopy">Student loans, debt, and credit card bills are not top of mind for most college students, yet the financial decisions they make today will have long-term effects on their lives. Poor financial awareness jeopardizes college completion, the quality of learning outcomes, and alumni satisfaction. Now more than ever, students nationwide are experiencing greater financial stress and need for preventive financial education.</p>
+          <div id="hewrap">
+            <div>
+              <a href="#hes2" class="scroll"><div class="heicon first-child" id="si1"><%= image_tag "flm/lifting.png"%><p id="textfit1">Empowered<br />Students</p></div>
+              <div class="hechild first-child"><p id="subtextfit1">Provide access to<br />financial literacy for a lifetime</p></div></a>
+            </div>
+
+            <div>
+              <a href="#hes2" class="scroll"><div class="heicon" id="si8"><%= image_tag "flm/pathing.png"%><p id="textfit2">Adaptive<br />Learning</p></div>
+              <div class="hechild"><p>Simulations and gaming that<br />meets national and state standards</p></div>
+            </div> </a> 
+
+            <div>
+              <a href="#hes2" class="scroll"><div class="heicon" id="si3"><%= image_tag "flm/support.png" %><p id="textfit3">Student<br />Support</p></div>
+              <div class="hechild"><p>Ensure that students have the resources they need to navigate their finances</p></div>
+            </div></a>
+
+            <div>
+              <a href="#hes2" class="scroll"><div class="heicon" id="si4"><%= image_tag "flm/assesment.png" %><p id="textfit4">Assessment<br />Data</p></div>
+              <div class="hechild"><p>Access rich data to<br />demonstrate student knowledge gain</p></div>
+            </div></a>
+
+            <div>
+              <a href="#hes2" class="scroll"><div class="heicon" id="si7"><%= image_tag "flm/community.png" %><p id="textfit5">Community<br />Engagement</p></div>
+              <div class="hechild"><p>Enhance student well-being and alumni relations</p></div>
+            </div></a>
+          </div>
+          <div id="banner">
+            <%= image_tag "flm/banner.png", id: "ltflg" %>
+          </div>
+        </div>
+        <div class="jumphe">
+          <a href="#hes2" class="scroll down_arrow"></a>
+        </div>
+      </div>
+      <div class="he_section2">
+        <div><h2 id="hes2">Bring financial education to your campus</h2></div>
+        <p class="hesignupcopy">Join hundreds of campuses across the country that are helping students take charge of their financial futures.<br /><br />Sign up to learn how to bring EverFi to your campus.</p>
+        <div id="hevids">
+          <a class="various fancybox.iframe" title="Buttonwood Course Overview" href="http://www.youtube.com/embed/SonHFmkV-IA?list=UU1k6mv5ZQlj_wLrxC1MkOSg"><%= image_tag "flm/bwood_play.png" %></a>
+            <p>Learn How EverFi Supports Student Success</p>
+        </div>
+        <div id="heform">
+          <div id="hefromtitle"><h2>Sign Up to Get Invovled</h2></div>
+        <form class="lpeRegForm formNotEmpty" id="formstyle" method="post" enctype="application/x-www-form-urlencoded" action="http://app-sj02.marketo.com/index.php/leadCapture/save" id="mktForm_9" name="mktForm_9" _lpchecked="1"><ul class="mktLblLeft"><li class="mktFormReq mktField"><label>First Name:</label><br /><span class="mktInput"><input class="mktFormText mktFormString mktFReq" name="FirstName" id="FirstName" type="text" value="" maxlength="255" tabindex="1"><span class="mktFormMsg"></span></span></li>
+        <li class="mktFormReq mktField"><label>Last Name:</label><br /><span class="mktInput"><input class="mktFormText mktFormString mktFReq" name="LastName" id="LastName" type="text" value="" maxlength="255" tabindex="2"><span class="mktFormMsg"></span></span></li>
+        <li class="mktFormReq mktField"><label>College/University</label><br /><span class="mktInput"><input class="mktFormText mktFormString mktFReq" name="Company" id="Company" type="text" value="" maxlength="255" tabindex="3"><span class="mktFormMsg"></span></span></li>
+        <li class="mktFormReq mktField"><label>Title:</label><br /><span class="mktInput"><input class="mktFormText mktFormString mktFReq" name="Title" id="Title" type="text" value="" maxlength="255" tabindex="4"><span class="mktFormMsg"></span></span></li>
+        <li class="mktFormReq mktField"><label>Email Address:</label><br /><span class="mktInput"><input class="mktFormText mktFormEmail mktFReq" name="Email" id="Email" type="text" value="" maxlength="255" tabindex="5"><span class="mktFormMsg"></span></span></li>
+        <li class="mktField"><label>Phone Number:</label><br /><span class="mktInput"><input class="mktFormText mktFormPhone" name="Phone" id="Phone" type="text" value="" maxlength="255" tabindex="6"><span class="mktFormMsg"></span></span></li>
+        <li id="mktFrmButtons"><label>&nbsp;</label><input id="mktFrmSubmit" type="submit" style="width: auto; overflow: visible; padding-left: .25em; padding-right: .25em;" value="Submit" name="submitButton" onclick="formSubmit(document.getElementById(&quot;mktForm_9&quot;)); return false;">&nbsp;<input style="display: none;" id="mktFrmReset" type="reset" value="Clear" name="resetButton" onclick="formReset(document.getElementById(&quot;mktForm_9&quot;)); return false;"></li>  </ul>
+          <span style="display:none;"><input type="text" name="_marketo_comments" value=""></span>
+          <input type="hidden" name="lpId" value="-1">
+          <input type="hidden" name="subId" value="180">
+          <input type="hidden" name="munchkinId" value="410-YCZ-984">
+          <input type="hidden" name="kw" value="">
+          <input type="hidden" name="cr" value="">
+          <input type="hidden" name="searchstr" value="">
+          <input type="hidden" name="lpurl" value="http://na-sj02.marketo.com/lp/everfi/FLM_HigherEd-signup.html?cr={creative}&amp;kw={keyword}">
+          <input type="hidden" name="formid" value="9">
+          <input type="hidden" name="returnURL" value="http://na-sj02.marketo.com/lp/everfi/FLMThankYou.html">
+          <input type="hidden" name="retURL" value="http://na-sj02.marketo.com/lp/everfi/FLMThankYou.html">
+          <input type="hidden" name="returnLPId" value="-1">
+          <input type="hidden" name="_mkt_disp" value="return">
+      <input type="hidden" name="_mkt_trk" value="">
+  </form>
+        <div id="downldbx"><a href="http://everfimkt.s3.amazonaws.com/Website/MoneyMattersOnCampus_FINAL.pdf" target="_blank">
+          <p>Download the Money Matters on Campus Report</p>
+          <%= image_tag "flm/Download.png" %></a>
+        </div>
+        <div id="infobox"><a href="http://everfimkt.s3.amazonaws.com/Website/HigherOneInfoGraphic-FINAL.png">
+          <%= image_tag "flm/inograph.png", target: "_blank" %>
+            <p>Veiw the <strong>Money Matters on Campus Infographic</strong></p></a></div>
+          </div>
+        <div class="topreturn">
+          <div class="upYellow"><a href="/financialliteracymonth">
+            <%= image_tag "flm/upYellow.png"%>
+            <p>FLM<p>
+            </a></div>
+            <div class="rightYellow"><a href="http://everfi.com/"><%= image_tag "flm/rightYellow.png"%></a><p>HOME</p></a></div>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+<%= render "custom_pages/flm_js" %>

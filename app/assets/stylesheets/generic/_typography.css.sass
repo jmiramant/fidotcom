@@ -1,0 +1,57 @@
+body
+  font-family: $font-family
+  font-size: $font-size
+  color: $font-color
+
+a
+  color: $link-color
+
+em
+  font-style: italic
+
+strong
+  font-weight: bold
+
+.more
+  display: inline-block
+  padding-right: 38px
+  line-height: 26px
+  +data-uri-bg("i_more.png", right center no-repeat)
+
+  &:hover
+    color: $yellow
+    +data-uri-bg("i_more_active.png", right center no-repeat)
+
+.button
+  height: 43px
+  display: inline-block
+  padding: 15px 70px 0 25px
+  font-family: $font-josefin
+  font-size: 36px
+  font-weight: 600
+  letter-spacing: 0.04em
+  text-transform: uppercase
+  text-decoration: none
+  color: #fff
+  +data-uri-bg("bg_button.png", $green right center no-repeat)
+
+  &.white
+    height: 38px
+    padding: 15px 63px 0 18px
+    font-size: 22px
+    color: $contrast
+    +data-uri-bg("i_next_orange.png", #fff right center no-repeat)
+
+    &:hover
+      color: #fff
+      background-color: $gray-light
+
+h1.section
+  height: 55px
+  margin-bottom: 2px
+  padding: 28px 0 0 40px
+  font-family: $font-josefin
+  font-size: 34px
+  text-transform: uppercase
+  color: $yellow
+  background: $gray-dark

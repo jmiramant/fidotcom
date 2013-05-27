@@ -1,0 +1,1512 @@
+.headerbar {
+	background-color: #383838;
+	width: 100%;
+	height: 120px;
+	margin: -8px;
+}
+
+.sidebar {
+	float: right;
+	margin-right: 118px;
+}
+
+.homenav {
+	z-index: 1000;
+	width: 116px;
+	height: 40px;
+	background-color: #75C4D1;
+	margin: 11px 0px 0px 0px;
+	position: fixed;
+	overflow: hidden;
+	text-align: center;
+	font: 700 23px 'Josefin Slab',arial,sans-serif;
+	padding-top: 19px;
+	border-width: 2px;
+	border-style: solid;
+	border-color: #F2F2F2;
+}
+
+#pgcolor {
+	background-color: #75C4D1;
+	background-image: image-url('flm/map.png');
+	margin: -8px 0px 0px -8px;
+	height: 568px;
+}
+
+#content1{
+	z-index: 1000;
+	height: 193px;
+	width: 116px;
+	background-color: #383838;
+	margin: 76px 0px 0px 0px;
+	overflow: hidden;
+	position: fixed;
+	border-width: 2px;
+	border-style: solid;
+	border-color: #F2F2F2;
+}
+
+.topnavlist a {
+	text-decoration:none;
+	color: #fff;
+	font-family: 'Josefin Slab',arial,sans-serif;
+	font-size: 16px;
+}
+
+ul.topnavlist {	
+	margin: 7px 0px 0px 22px;
+}
+
+.topnavlist a:hover {
+	color: #A8A8A8;
+}
+
+h3 {
+	font: 400 24px 'Josefin Slab',arial,sans-serif;
+	color: #fff;
+	text-align: center;
+	margin: 11px 0px 0px 0px;
+}
+
+.topnavlist li {
+	list-style-image: image-url('flm/SmallBulletYellow.png');
+	padding: 4px 0px 7px 0px;
+}
+
+.homenav a {
+ 	color: #fff;
+}
+
+.homenav a:hover {
+ 	color: #8A8A8A;
+}
+
+.homenav a:link {
+	text-decoration:none;
+}
+
+.signup {
+	z-index: 1000;
+	width: 116px;
+	height: 57px;
+	background-color: #FFC948;
+	margin: 276px 0px 0px 0px;
+	position: fixed;
+	overflow: hidden;
+	text-align: center;
+	font: 700 16px 'Josefin Slab',arial,sans-serif;
+	color: #000;
+	border-width: 2px;
+	border-style: solid;
+	border-color: #F2F2F2;
+
+}
+
+.blog_chalenge {
+	z-index: 1000;
+	width: 158px;
+	height: 133px;
+	background-color: #F9444A;
+	margin: 276px 0px 0px -42px;
+	position: fixed;
+	overflow: hidden;
+	text-align: center;
+	font: 700 16px 'Josefin Slab',arial,sans-serif;
+	color: #000;
+	border-width: 2px;
+	border-style: solid;
+	border-color: #F2F2F2;
+}
+
+.signup img, .blog_chalenge img  {
+	width: 34px;
+	height: 34px;
+	padding: 11px 0px 0px 13px;
+}
+
+.signup span, {
+	float: right;
+	font-size: 22px;
+	width: 83%;
+	text-align: center;
+	margin: 8px 12px;
+}
+
+.blog_chalenge span {
+	float: right;
+	font-size: 24px;
+	width: 79%;
+	text-align: center;
+	margin: 8px 12px;
+}
+
+.signup a {
+ 	color: #000;
+}
+
+.blog_chalenge a {
+	color: #fff
+}
+
+.signup a:hover, .blog_chalenge a:hover {
+ 	color: #8A8A8A;
+}
+
+.signup a:link, .blog_chalenge a:link {
+	text-decoration:none;
+}
+
+#sectioncolortwo {
+	background-color: #F2F2F2;
+	background-image: image-url('flm/map.png');
+	margin: -8px -8px 0px -8px;
+	height: 745px;
+}
+
+.top {
+	display: block;
+	margin: 0 auto;
+	max-width: 1280px;
+	min-height: 425px;
+	padding: 2em 0 0;
+}
+
+#pad, #hope { 
+	padding: 10px 0px 56px 0px;
+	min-height: 565px;
+}
+
+#mission { 
+	padding: 10px 0px 0px 0px;
+	min-height: 699px;
+}
+
+#outer {
+	border-left: 26px transparent solid;
+	border-right: 26px transparent solid;
+	max-width: 1000px;
+	height: 147px;
+	margin: 0 auto;
+}
+
+h1 {
+	display: block;
+	font: 400 64px 'Josefin Slab',arial,sans-serif;
+	color: #fff;
+	margin: 0 auto;
+	text-align: center;
+	position: relative;
+	margin-bottom: -11px;
+
+}
+
+#flmhead {
+	display: block;
+	font: 400 64px 'Josefin Slab',arial,sans-serif;
+	color: #fff;
+	margin: 0 auto;
+	text-align: center;
+	position: relative;
+	margin-bottom: 10px;
+}
+
+h2 {
+
+	font: 400 2.5em/1.25em 'Josefin Slab',arial,sans-serif;
+	margin: .75em 0 .3em;
+	text-align: center;
+	position: relative;
+	color: #4D4D4D;
+
+}
+
+#first 	 {
+	font: 400 2em/1.25em 'Josefin Slab',arial,sans-serif;
+}
+
+#sectionhead {
+	margin-top: 1em;
+
+}
+
+p .head {
+	text-align: center;
+	font-family: 'Josefin Slab',arial,sans-serif;
+	background: -webkit-linear-gradient(top,#ddd 0%,#9c9c9c 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-size: 18px; 
+	
+}
+
+.infographic img {
+	display: block;
+	margin: 0px auto;
+	border: white;
+	border-style: solid;
+	border-width: 11px;
+	border-radius: 4px;
+}	
+
+/**********  FUNNEL PAGE **************/
+
+#funnel_bg {
+	background-color: #75C4D1;
+	background-image: image-url('flm/map_narrow.png');
+	background-repeat:no-repeat;
+	background-size:100% 250px;
+	margin: -26px -9px 0px -9px;
+}
+
+#involved {
+	text-align: center;
+	font-family: 'Josefin Slab',arial,sans-serif;
+	color: #4D4D4D;
+	font-size: 38px;
+	line-height: 22px;
+	margin-top: 33px;
+}
+
+.funnelWrap {
+	width: 800px;
+	margin:58px auto;
+}
+
+
+.funnelbox {
+	background: #383838;
+	width: 33%;
+	height: 182px;
+	float: left;
+	margin: 0px auto 0px auto;
+	font-family: 'Josefin Slab',arial,sans-serif;
+	font-size: 50px;
+	text-align: center;
+	padding-top: 48px;
+	color: #FFC948;
+}
+.funnelbox:hover  {
+	color: #383838;
+	background-color: #FFC948;
+}
+
+.funnelchild {
+	display: none;
+	background: #FFC948;
+	width: 33%;
+	height: 216px;
+	float: left;
+	margin: 230px 0px 0px -264px;
+	padding-top: 14px;
+	font-family: 'Josefin Slab',arial,sans-serif;
+	color: #383838;
+	text-align: center;
+	font-size: 26px;
+}
+
+.funnelchild p {
+	font-family: 'Open Sans',arial,sans-serif;
+	color: #383838;
+	font-size: 21px;
+	text-align: center;
+	padding: 0px 22px 0px 22px;
+	line-height: 38px;
+
+}
+
+#fcleft {
+	margin-top: -76px;
+}
+
+#fccenter {
+	margin-top: -61px;
+}
+
+#fcright {
+	margin-top: -41px;
+}
+
+#fclimg {
+	height: 61px;
+	margin: 23px 0px 0px 142px;	
+}
+
+#fccimg {
+	height: 61px;
+	margin: 38px 0px 0px 148px;
+}
+
+#fcrimg {
+	height: 57px;
+	margin: 1px 0px 0px 161px;
+}
+
+
+.funnelbox a:link {
+	text-decoration: none;
+}
+
+
+ #bgimg1 {
+	height: 461px;
+	width: 1440px;
+	margin: -1px 0px 0px -78px;
+	background-image: image-url('flm/student_background.png');
+	background-repeat: no-repeat;
+}
+
+
+
+.funnelhead {
+	margin: .85em 0 .1em;
+	color: #fff;
+	font-weight: 400;
+	font-size: 41px;
+}
+
+ /****** END: FUNNEL PAGE ********/
+
+#white {
+	text-align: center;
+	margin-top: 10px;
+	font-family: 'Open Sans',arial,sans-serif;
+	font-size: 19px;
+	color: #4D4D4D;
+
+}
+
+.intro {
+	text-align: center;
+	font-family: 'Open Sans',arial,sans-serif;
+	color: #363636;
+	font-weight: 400;
+	font-size: 19px;
+	line-height: 29px;
+	margin: 0px 25px 7px 25px;
+	}
+
+.intro2 {
+	text-align: center;
+	font-family: 'Josefin Slab',arial,sans-serif;
+	color: #383838;
+	font-size: 24px;
+	line-height: 29px;
+	}
+
+
+.jump {
+	height: 66px;
+	position: relative;
+	text-align: center;
+	margin: -101px auto;
+	width: 100%;
+	z-index: 1000;
+}
+
+.jumpmid {
+	height: 66px;
+	position: relative;
+	text-align: center;
+	margin: 58px auto;
+	width: 100%;
+	z-index: 1000;
+}
+
+.jumpschool {
+	height: 66px;
+	position: relative;
+	text-align: center;
+	margin: -42px auto;
+	width: 100%;
+	z-index: 1000;
+}
+
+.jumpcompany {
+	height: 66px;
+	position: relative;
+	text-align: center;
+	margin: -42px auto;
+	width: 100%;
+	z-index: 1000;
+}
+
+.jumphe {
+	height: 114px;
+	position: relative;
+	text-align: center;
+	margin: -89px auto;
+	width: 100%;
+	z-index: 1000;
+}
+
+.down_arrow {
+	height: 60px;
+	width: 60px;
+	background: image-url('flm/downYellow.png') no-repeat;
+	background-size: 60px 60px;
+	display: inline-block;
+	margin: 0 auto;
+}
+
+.down_arrow_top {
+	height: 60px;
+	width: 60px;
+	background: image-url('flm/downYellow.png') no-repeat;
+	background-size: 60px 60px;
+	display: inline-block;
+	margin: 22px;
+}
+
+#centering img {
+	display: block;
+	width: 414px;
+	margin: 17px auto;
+	box-shadow: 5px 5px 23px #363636;
+}
+
+#solution_wrap {
+	display: block;
+	width: 92%;
+	margin: 0px auto;
+	padding-left: 8%
+}
+
+.solution_box {
+	background-color: #ffffff;
+	width: 27.5%;
+	height: 300px;
+	float: left;
+	margin: 37px 20px 0px 20px;
+	font-family: 'Josefin Slab',arial,sans-serif;
+	font-size: 30px;
+	color: #75C4D1;
+	border-top-style: solid;
+	border-top-width: 16px;
+}
+
+.solution_box p {
+	margin: 12px;
+}
+
+.solution_box img {
+	width: 225px;
+	display: block;
+	margin: 3px auto;
+	box-shadow: 0px 0px 10px #aaaaaa;
+}
+
+#solution_tag {
+	margin-left: -77px;
+}
+
+#solution_tag p {
+	margin-top: -114px;
+}
+
+#solution_path {
+	font-family: 'Josefin Slab',arial,sans-serif;
+	font-size: 33px;
+	color: #363636;
+	text-align: center;
+	margin: 14px 0px;
+}
+
+#solution_banner{
+	width: 44%;
+	display: block;
+	margin: 48px auto;
+}
+
+/******* START OF CONVERSION PAGES *******/
+.companyHeader {
+	background: #525354;
+	margin:0px 0px 0px -7px;
+	width: 101%;
+	height: 300px;
+}
+
+	/* SCHOOL CONVERSION PAGE */
+.school_length {
+	margin: 0px -10px;
+}
+.school_section1 {
+	background-color: #FFC948;
+	background-image: image-url('flm/map_narrow.png');
+	height: 710px;
+}
+
+
+.school_section1 h2 {
+	font: 400 46px 'Josefin Slab',arial,sans-serif;
+	margin: -87px 0px 0px 0px;
+	text-align: center;
+	position: relative;
+	color: #4D4D4D;
+}
+
+#schoolimg {
+	display: block;
+	margin: auto;
+	padding: 0px 993px 0px 0px;
+	height: 105px;
+}
+
+#school_color {
+	background-color: #F8D856;
+	margin: 0px 0px 0px -9px;
+}
+
+.schoolcopy {
+	text-align: center;
+	width: 60%;
+	margin: 13px auto;
+	font-family: 'Open Sans',arial,sans-serif;
+	color: #383838;
+	font-size: 16px;
+	line-height: 26px;
+}
+
+#schoolwrap{
+	display: block;
+	width: 68%;
+	margin: 0px auto;
+	padding-left: 8%
+}
+
+#schoolVid1 {
+	float: right;
+	margin-top: 43px;
+}
+
+#schoolVid2 {
+float: right;
+margin-top: 15px;
+}
+
+#schoolVid1 h2 {
+	font-family: "Open Sans", arial, sans-serif;
+	font-size: 16px;
+	text-align: left;
+	color: #4D4D4D;
+}
+
+#schoolVid2 h2 {
+	font-family: "Open Sans", arial, sans-serif;
+	font-size: 16px;
+	text-align: left;
+	color: #4D4D4D;
+}
+
+#subhead {
+	text-align: center;
+	width: 43%;
+	margin-top: 12px;
+	margin-left: 11%;
+	margin-bottom: 11px;
+	font-family: 'Open Sans',arial,sans-serif;
+	font-size: 20px;
+	color: #4D4D4D;
+}
+
+.signupcopy {
+	text-align: center;
+	width: 32%;
+	margin-top: 12px;
+	margin-left: 20%;
+	font-family: 'Open Sans',arial,sans-serif;
+	font-size: 18px;
+	color: #4D4D4D;
+}
+
+.signupcopy_schools {
+	text-align: center;
+	width: 50%;
+	margin: -12px auto;
+	font-family: 'Open Sans',arial,sans-serif;
+	font-size: 18px;
+	color: #4D4D4D;
+}
+
+.schoolicon {
+	background-color: #6FBEC8;
+	width: 15.5%;
+	height: 215px;
+	float: left;
+	margin: 0px 10px 0px 10px;
+	font-family: 'Josefin Slab',arial,sans-serif;
+	font-size: 30px;
+	text-align: center;
+	padding-top: 35px;
+	color: #FFF;
+}
+
+.schoolicon:hover {
+	cursor: pointer;
+	background-color: #F9444A;
+}
+
+#schoolwrap .schoolicon.first-child {
+	background-color: #F9444A;	
+}
+
+#schoolwrap .first-child {
+	display: block;	
+}
+
+#school_wrap_column1 {
+	width: 33%;
+	float: left;
+}
+
+#school_wrap_column2 {
+	width: 33%;
+	margin: 0px auto;
+}
+
+#school_wrap_column3 {
+	width: 33%;
+	float: right;
+}
+
+#si1 img {
+	width:100px;
+}
+
+#si2 img {
+	width: 51%; 
+	padding-bottom: 7px;
+}
+
+#si3 img {
+	width:44.5%;
+	padding-bottom: 5px;
+}
+
+#si4 img {
+	width: 52.5%;
+	padding-bottom: 3px;
+}
+
+#si5 img {
+	width:77.5%;
+	padding: 22px 0px 14px 0px;
+}
+
+.schoolchild {
+	display: none;
+	position: absolute;
+	width: 43%;
+	font-family: 'Josefin Slab',arial,sans-serif;
+	text-align: center;
+	margin: 304px 0px 0px 8%;
+}
+
+.schoolchild p, .companychild p, .hechild p {
+	color: #363636;
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
+.schoolchild {
+	font-size: 33px
+}
+} 
+ 
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+.schoolchild {
+	font-size: 22px
+}
+}
+ 
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+.schoolchild {
+	font-size: 16px
+}
+}
+ 
+/* Landscape phones and down */
+@media (max-width: 480px) {
+	.schoolchild {
+	font-size: 20px
+}
+}
+
+.schoolchildwrap{
+	display: block;
+	position: relative;
+	width: 46%;
+	margin: 297px auto;
+	height: 100px;
+	background-color: #FFFFFF;
+}
+
+#banner {
+	width: 64%;
+	margin: 282px auto;
+	padding-right: 9px;
+}
+
+#ltflg {
+	width: 100%;
+}
+
+.school_section2 {
+	background: #E6E6E6;
+	background-image: image-url('flm/map.png');
+	height: 802px;
+	width: 101%;
+	margin: 4px 0px 0px -4px;
+}
+
+.school_section3 {
+	background: #fff;
+	height: 605px;
+}
+
+#quotebox {
+	display: block;
+	margin: 50px auto;
+}
+
+#quotecopy {
+	font: 400 2.6em/1.25em 'Josefin Slab',arial,sans-serif;
+	font-size: 20px;
+	text-align: center;
+	position: relative;
+	margin: 0px 0px 0px 584px;
+	color: #fff;
+}
+
+#quotetop {
+	font: 700 2.6em/1.25em 'Josefin Slab',arial,sans-serif;
+	font-size: 28px;
+	text-align: center;
+	position: relative;
+	margin: -77px 0px 0px 171px;
+	color: #6FBEC8;
+}
+
+#quotebottom {
+	font: 400 2.6em/1.25em 'Josefin Slab',arial,sans-serif;
+	font-size: 20px;
+	text-align: center;
+	position: relative;
+	margin: 0px 0px 0px -1px;
+	color: #383838;
+}
+
+#attribschool{
+	font: 400 2.6em/1.25em 'Josefin Slab',arial,sans-serif;
+	font-size: 20px;
+	text-align: center;
+	position: relative;
+	margin: 0px 0px 0px 301px;
+	color: #383838;
+}
+
+#formhead {
+	font: 400 2.6em/1.25em 'Josefin Slab',arial,sans-serif;
+	margin: 0em 0 .1em;
+	text-align: center;
+	position: relative;
+	color: #4D4D4D;
+	padding: 53px 0px 18px 0px;
+}
+
+#schoolform {
+	width: 346px;
+	height: 471px;
+	margin: 38px auto;
+	background-color: #6fbec8;
+	text-align: center;
+	font: 400 17px 'Josefin Slab',arial,sans-serif;
+}
+
+h2#school_form_title {
+	font: 400 2.5em/1.25em "Josefin Slab", arial, sans-serif;
+	margin: 0px;
+	text-align: center;
+	position: relative;
+	color: #4D4D4D;
+}
+
+#fromtitle {
+	width: 100%;
+	background-color: #FFC948;
+	padding: 16px 0px 6px;
+	font-size: 13px;
+}
+
+#schoolform li {
+	list-style: none;
+}
+
+.topreturn {
+	display: block;
+	position: relative;
+	margin-top: 20px;
+	text-align: center;
+	margin-left: -83px;
+}
+
+.topreturn p{
+	font: 400 17px 'Josefin Slab',arial,sans-serif;
+}
+
+.topreturn a {
+	color: #4D4D4D;
+}
+
+.topreturn a:link {
+	text-decoration: none;
+}
+
+.rightYellow p {
+	margin-top: 3px;
+}
+
+.upYellow p {
+	margin-top: 3px;
+}
+
+.rightYellow {
+ margin: -85px 0px 0px 150px;
+}
+
+#formstyle {
+	line-height: 23px;
+	text-align: left;
+	padding-left: 57px;
+	font-size: 17px;
+	padding-top: 19px;
+}
+
+#formstyle ul {
+ 	list-style: none;
+}
+
+.schoolbutton{
+	image-url: image-url('flm/submit.png') no-repeat;
+    cursor:pointer;
+}
+	/* COMPANY CONVERSION PAGE */
+
+.company_section1 {
+	background-color: #E6E6E6;
+	background-image: image-url('flm/map_narrow.png');
+	height: 700px;
+}
+
+
+.company_section1 h2 {
+	font: 400 41px 'Josefin Slab',arial,sans-serif;
+	margin: -87px 0px 0px 0px;
+	text-align: center;
+	position: relative;
+	color: #4D4D4D;
+}
+
+.companyCopy {
+	text-align: center;
+	width: 60%;
+	margin: 8px auto;
+	font-family: 'Open Sans',arial,sans-serif;
+	color: #383838;
+	font-size: 16px;
+	line-height: 26px;
+}
+
+#companyformhead {
+	font: 400 2.6em/1.25em 'Josefin Slab',arial,sans-serif;
+	margin: 0em 0 .1em;
+	text-align: center;
+	position: relative;
+	color: #4D4D4D;
+	padding: 53px 0px 18px 0px;
+}
+
+.company_section2 {
+	background: #75C4D1;
+	/*background-image: image-url('images/map.png'); */
+	height: 966px;
+	width: 101%;
+	margin: 4px 0px 0px -4px;
+}
+
+#companyfrom {
+	width: 25%;
+	height: 576px;
+	margin: -551px auto auto;
+	background-color: #363636;
+	text-align: center;
+	font: 400 17px 'Josefin Slab',arial,sans-serif;
+	line-height: 37px;
+	color: #fff;
+}
+
+#companyform li {
+	list-style: none;
+}
+
+#companyformtitle {
+	width: 100%;
+	background-color: #FFC948;
+	padding: 16px 0px 6px;
+	font-size: 13px;
+}
+
+#companybs {
+	display: block;
+	margin: 0px 0px 0px 78px;
+	padding-top: 80px;
+}
+
+#companybs p {
+	text-align: center;
+	font-family: 'Josefin Slab',arial,sans-serif;
+	font-size: 20px;
+	color: #4D4D4D;
+	margin: 0px;
+	width: 26%;
+}
+
+
+#companybs {
+	display: block;
+	margin: 0px 0px 0px 78px;
+	padding-top: 54px;
+}
+
+#companydownload {
+	margin:66px 0px 0px 82px;
+}
+
+#companydownload img {
+	display: block;
+	margin: 10px 0px 10px -4px;
+
+}
+
+#companydownload p {
+	text-align: center;
+	font-family: 'Josefin Slab',arial,sans-serif;
+	font-size: 20px;
+	color: #4D4D4D;
+	margin: 0px;
+	width: 24%;
+}
+
+#rightadjust {
+	margin-top: -167px;
+	margin-right: -114px;
+}
+
+#si6 img {
+	width: 44.5%;
+	padding: 1px 0px 13px 0px;
+}
+
+#si7 img {
+	width: 60%;
+}
+
+.companyicon {
+	background-color: #6FBEC8;
+	width: 15.5%;
+	height: 215px;
+	float: left;
+	margin: 0px 10px 0px 10px;
+	font-family: 'Josefin Slab',arial,sans-serif;
+	font-size: 30px;
+	text-align: center;
+	padding-top: 35px;
+	color: #FFF;
+}
+
+.companyicon:hover {
+	cursor: pointer;
+	background-color: #7AC685;
+}
+
+#companywrap .companyicon.first-child {
+	background-color: #7AC685;	
+}
+
+#companywrap .first-child {
+	display: block;	
+}
+
+#companywrap .first-child {
+	display: block;	
+}
+
+#companywrap{
+	display: block;
+	width: 68%;
+	margin: 0px auto;
+	padding-left: 8%
+}
+
+.companychild {
+	display: none;
+	position: absolute;
+	width: 43%;
+	font-family: 'Josefin Slab',arial,sans-serif;
+	text-align: center;
+	margin: 304px 0px 0px 8%;
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
+.companychild {
+	font-size: 33px
+}
+} 
+ 
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+.companychild {
+	font-size: 22px
+}
+}
+ 
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+.companychild {
+	font-size: 16px
+}
+}
+ 
+/* Landscape phones and down */
+@media (max-width: 480px) {
+.companychild {
+	font-size: 20px
+}
+}
+
+.companysignupcopy {
+	text-align: center;
+	font-family: 'Josefin Slab',arial,sans-serif;
+	font-size: 23px;
+	color: #4D4D4D;
+	line-height: 27px;
+	margin: -13px 21% 0px 21%;
+}
+
+#companyvids {
+	float: right;
+	margin: -52px 6% 0px 0px;
+
+}
+
+#companyvids p {
+	text-align: center;
+	font-family: 'Josefin Slab',arial,sans-serif;
+	font-size: 20px;
+	color: #4D4D4D;
+	margin: 0px;
+}
+
+#vaultinfo h2, #fiinfo h2, #bwoodinfo h2, #workinfo h2 {
+	font: 400 24px 'Josefin Slab',arial,sans-serif;
+	margin: 0em 0 .1em;
+	text-align: center;
+	position: relative;
+	color: #4D4D4D;
+	font-weight: 700;
+}
+
+#vaultinfo p, #fiinfo p, #bwoodinfo p, #workinfo p {
+	margin-top: 0px;
+	font-size: 22px;
+}
+
+#vaultinfo {
+	float: right;
+	margin: -373px 11% 0px 0px;
+	width: 29%;
+	text-align: center;
+	font-family: 'Josefin Slab',arial,sans-serif;
+	font-size: 24px;
+	color: #4D4D4D;
+
+}
+
+#fiinfo {
+	float: right;
+	margin: -299px 11% 0px 0px;
+	width: 29%;
+	text-align: center;
+	font-family: 'Josefin Slab',arial,sans-serif;
+	font-size: 24px;
+	color: #4D4D4D;
+}
+
+#bwoodinfo {
+	float: right;
+	margin: -223px 11% 0px 0px;
+	width: 29%;
+	text-align: center;
+	font-family: 'Josefin Slab',arial,sans-serif;
+	font-size: 24px;
+	color: #4D4D4D;
+}
+
+#workinfo {
+	float: right;
+	margin: -148px 11% 0px 0px;
+	width: 29%;
+	text-align: center;
+	font-family: 'Josefin Slab',arial,sans-serif;
+	font-size: 24px;
+	color: #4D4D4D;
+}
+
+#wtbox {
+	display: block;
+	position: relative;
+	margin: 24px auto;
+	width: 1136px;
+	height: 576px;
+	background-color: #E6E6E6;
+	background-image: image-url('flm/map.png');
+}
+
+.banner_bar {
+	height: 58px;
+	width: 100%;
+	background-color: #FF9326;
+	border-bottom: 1px solid #cdcccc;
+}
+
+.banner_bar2 {
+	height: 58px;
+	width: 100%;
+	background-color: #FF9326;
+	border-bottom: 1px solid #cdcccc;
+	margin-top: -50px; 
+}
+
+#company_column1 {
+	float: left;
+	max-width: 56%;
+}
+
+.centeringCompany img {
+	margin: 41px 63px 54px -16px;
+}
+
+
+.companyColumnsBox {
+	margin: 0 auto;
+	width: 886px;
+}
+
+#company_column2 {
+	border: 10px solid #f6f6f6;
+	border-radius: 11px;
+	float: right;
+	margin: -44px 0px 0px 0px;
+	background-color: #fff;
+	width: 387px;
+	height: 416px;
+}
+
+
+#companyVP {
+	position: relative;
+	width: 100%;
+}
+
+.companytopreturn {
+	display: block;
+	position: relative;
+	margin-top: -184px;
+	margin-right: 85px;
+	margin-bottom: 49px;
+	text-align: center;
+}
+
+.companytopreturn p{
+	font: 400 17px 'Josefin Slab',arial,sans-serif;
+}
+
+.companytopreturn a {
+	color: #4D4D4D;
+}
+
+.companytopreturn a:link {
+	text-decoration: none;
+}
+
+#companyformstyle {
+	line-height: 31px;
+	text-align: left;
+	padding-left: 37px;
+	padding-top: 28px;
+	font-size: 18px;
+}
+
+#companyformstyle ul {
+ 	list-style: none;
+}
+
+#si8 img {
+	width: 37%;
+	padding-bottom: 7px;
+}
+
+#si7 img {
+	width: 50.5%;
+	padding: 15px 0px 0px 0px;
+}
+
+	/* HIGHER EDUCATION CONVERSION PAGE */
+.he_section1 {
+
+	background-color: #E6E6E6;
+	background-image: image-url('flm/map_narrow.png');
+	height: 749px;
+}
+
+
+.he_section1 h2 {
+	font: 400 41px 'Josefin Slab',arial,sans-serif;
+	margin: -87px 0px 0px 0px;
+	text-align: center;
+	position: relative;
+	color: #4D4D4D;
+}
+
+#heform {
+	width: 308px;
+	height: 495px;
+	margin: -162px 0px 0px 669px;
+	background-color: #E6E6E6;
+	text-align: center;
+	font: 400 17px 'Josefin Slab',arial,sans-serif;
+	line-height: 37px;
+}
+
+#hefromtitle {
+	width: 100%;
+	background-color: #00807F;
+	padding: 16px 0px 6px;
+	font-size: 13px;
+}
+
+.heicon {
+	background-color: #6FBEC8;
+	width: 15.5%;
+	height: 215px;
+	float: left;
+	margin: 0px 10px 0px 10px;
+	font-family: 'Josefin Slab',arial,sans-serif;
+	font-size: 30px;
+	text-align: center;
+	padding-top: 35px;
+	color: #FFF;
+}
+
+.heicon:hover {
+	cursor: pointer;
+	background-color: #00807F;
+}
+
+#hewrap .heicon.first-child {
+	background-color: #00807F;	
+}
+
+#hewrap .first-child {
+	display: block;	
+}
+
+#hewrap .first-child {
+	display: block;	
+}
+
+#hewrap{
+	display: block;
+	width: 68%;
+	margin: 0px auto;
+	padding-left: 8%
+}
+
+.hechild {
+	display: none;
+	position: absolute;
+	width: 43%;
+	font-family: 'Josefin Slab',arial,sans-serif;
+	text-align: center;
+	margin: 304px 0px 0px 8%;
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
+.hechild {
+	font-size: 33px
+}
+} 
+ 
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+.hechild {
+	font-size: 22px
+}
+}
+ 
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+.hechild {
+	font-size: 16px
+}
+}
+ 
+/* Landscape phones and down */
+@media (max-width: 480px) {
+.hechild {
+	font-size: 20px
+}
+}
+
+.he_section2 {
+	background: #75C4D1;
+	height: 790px;
+	width: 101%;
+	margin: 4px 0px 0px -4px;
+	background-image: image-url('flm/map.png');
+}
+
+#hevids {
+	float: left;
+	margin: 12px 0 0 247px;
+}
+
+.hesignupcopy {
+	text-align: center;
+	width: 445px;
+	margin-top: 13px;
+	margin-left: 216px;
+	font-family: 'Open Sans',arial,sans-serif;
+	font-size: 19px;
+	color: #4D4D4D;
+	line-height: 26px;
+}
+
+#hevids p {
+	text-align: center;
+	font-family: 'Open Sans',arial,sans-serif;
+	font-size: 17px;
+	color: #4D4D4D;
+	margin: 10px 0 0 0;
+}
+
+#downldbx, #infobox {
+	background-color: #E6E6E6;
+	width: 185px;
+	height: 208px;
+}
+
+#downldbx_schools, #infobox_schools {
+	background-color: #FFC948;
+	width: 185px;
+	height: 208px;
+}
+
+#downldbx {
+	display: block;
+	margin: -424px 0px 0px 108%;
+
+}
+
+#downldbx_schools {
+	display: block;
+	margin: -481px 0px 0px 107%;
+
+}
+
+#infobox {
+	display: block;
+	margin: 21px 0px 0px 108%;
+}
+
+#infobox_schools {
+	display: block;
+	margin: 21px 0px 0px 107%;
+}
+
+#downldbx img {
+	height: 90px;
+	margin: -13px 0px -28px 0px;
+}
+
+#downldbx_schools img {
+	height: 90px;
+	margin: -8px 0px 0px 42px;
+}
+
+#hes2{
+	font: 400 2.6em/1.25em 'Josefin Slab',arial,sans-serif;
+	margin: 0em 0 .1em;
+	text-align: center;
+	position: relative;
+	color: #4D4D4D;
+	padding: 53px 0px 18px 0px;
+
+}
+
+#infobox img {
+	height: 90px;
+	margin: 28px 0px -28px 0px;
+}
+
+.whtspc {
+	width: 225px;
+}
+
+#infobox_schools img {
+	height: 90px;
+	margin: 27px 0px 0px 57px;
+}
+
+#infobox p, #downldbx p {
+	font-size: 16px;
+	line-height: 18px;
+	padding: 21px;
+}
+
+#infobox_schools p, #downldbx_schools p {
+	font-size: 16px;
+	line-height: 18px;
+	text-align: center;
+	padding: 14px;
+}
+
+#infobox a, #downldbx a {
+	color: #4D4D4D;
+}
+
+#infobox_schools a, #downldbx_schools a {
+	color: #4D4D4D;
+}
+
+#infobox a:link, #downldbx a:link {
+	text-decoration: none;
+
+}
+
+#infobox_schools a:link, #downldbx_schools a:link {
+	text-decoration: none;
+
+.signuptxt {
+	color: #fff
+}
+
+.mktField input {
+  border: 1px solid #CCC;
+  padding: 5px 10px;
+  width: 187px;
+}
+}

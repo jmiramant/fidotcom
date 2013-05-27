@@ -1,0 +1,30 @@
+= content_tag :div, class: copywriting("Highlight Color", phrase_type: 'string', page: @page, default: 'orange') do
+  %article.mod-intro.product
+    =raw @page.content_for(:body)
+
+    %figure
+      / Put the optional illustration here.
+
+  %section.mod-details
+    %h1 Product details
+
+    .box_1
+      =raw copywriting("Product Details Box 1", scope: :body, phrase_type: 'wysiwyg', page: @page)
+
+    .box_2
+      =raw copywriting("Product Details Box 2", scope: :body, phrase_type: 'wysiwyg', page: @page)
+
+  %section.mod-slider
+    %ul.slides
+      - @page.children.each do |child|
+        %li
+          =raw render 'refinery/pages/product_slider', :locals => {:page => child}
+  %section.mod-video
+    %h1
+      =raw copywriting("Video Details 1", scope: :body, phrase_type: 'wysiwyg', page: @page)
+    %figure
+      =raw copywriting("Video Embed Code", scope: :body, phrase_type: 'wysiwyg', page: @page)
+      %figcaption 
+        =raw copywriting("Video Description", scope: :body, phrase_type: 'wysiwyg', page: @page)
+
+=render 'refinery/footer_nav'

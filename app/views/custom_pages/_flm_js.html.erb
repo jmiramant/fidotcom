@@ -1,0 +1,99 @@
+<!-- FancyBox -->
+<%= content_for :javascripts do %>
+  <%= javascript_include_tag "flm/fancybox/jquery.fancybox.js",
+                              "flm/fancybox/jquery.fancybox.js",
+                              "flm/fancybox/jquery.fancybox-buttons.js",
+                              "flm/fancybox/jquery.fancybox-thumbs.js",
+                              "flm/fancybox/jquery.easing-1.3.pack.js",
+                              "flm/fancybox/jquery.mousewheel-3.0.6.pack.js",
+                              "flm/mktFormSupport.js",
+                              "flm/jquery.fittext.js" %>
+
+  <script type="text/javascript">
+  $(document).ready(function() {
+    $(".various").fancybox({
+      maxWidth  : 800,
+      maxHeight : 600,
+      fitToView : false,
+      width   : '70%',
+      height    : '70%',
+      autoSize  : false,
+      closeClick  : false,
+      openEffect  : 'elastic',
+      closeEffect : 'none'
+    });
+  });
+  </script>
+
+  <script type="text/javascript">
+  jQuery(document).ready(function($) {
+
+    $(".scroll").click(function(event){   
+      event.preventDefault();
+      $('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
+    });
+  });
+  </script>
+
+  <!-- FUNNEL ANI -->
+
+  <script>
+  $(document).ready(
+    function () {
+      $('.funnelbox').hover(
+        function () {
+          $(this).parent().children('.funnelchild').toggle();
+        }
+        );
+    }
+    );
+  </script>
+
+  <!-- SCHOOL ANIMATION -->
+  <script>
+    $(document).ready(function() {
+      $('.schoolicon').hover(function () {
+          $('#schoolwrap .first-child').removeClass('first-child');
+          $(this).parents('#schoolwrap').find('.schoolchild').hide();
+          $(this).parent().children('.schoolchild').show();
+      },
+      function(){
+        //i don't give fuck what you do
+      });
+    });
+  </script>
+
+  <!-- COMPANY ANIMATION -->
+  <script>
+    $(document).ready(function() {
+      $('.companyicon').hover(function () {
+          $('#companywrap .first-child').removeClass('first-child');
+          $(this).parents('#companywrap').find('.companychild').hide();
+          $(this).parent().children('.companychild').show();
+      },
+      function(){
+        //i don't give fuck what you do
+      });
+    });
+  </script>
+
+  <!-- HE ANIMATION -->
+  <script>
+    $(document).ready(function() {
+      $('.heicon').hover(function () {
+          $('#hewrap .first-child').removeClass('first-child');
+          $(this).parents('#hewrap').find('.hechild').hide();
+          $(this).parent().children('.hechild').show();
+      },
+      function(){
+        //i don't give fuck what you do
+      });
+    });
+  </script>
+  <!-- FIT TEXT -->
+
+
+  <script>
+    jQuery("#textfit1, #textfit2, #textfit3, #textfit4, #textfit5").fitText(0.6);
+  </script>
+<% end %>

@@ -1,0 +1,15 @@
+!!! 5
+%html
+  - site_bar = render('/refinery/site_bar', :head => true)
+
+  = render '/refinery/head'
+  %body
+    = render '/refinery/ie6check' if request.env['HTTP_USER_AGENT'] =~ /MSIE/
+    = site_bar
+    = render '/refinery/header.html.haml'
+
+    .wrap= yield
+
+    = render '/refinery/footer'
+    = render '/refinery/javascripts'
+    = render 'layouts/custom_javascripts'

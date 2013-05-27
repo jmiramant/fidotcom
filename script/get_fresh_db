@@ -1,0 +1,72 @@
+#!/bin/bash
+
+# I am a script for making your local DB up to date with the freshest production data!
+# run me with no params to download the freshest DB backup available
+#    script/get_fresh_db
+# run me while passing the param 'new' to generate a new db backup
+#    script/get_fresh_db new
+# run me while passing the param a specific backup key to download & restore that backup
+#    script/get_fresh_db a001
+
+
+db_number_to_delete=10
+remote=heroku
+db_name=dotcom_development
+
+function last_backup {
+  heroku pgbackups --remote $remote |
+    grep '^b' |
+    cut -d ' ' -f 1 |
+    tail -n 1
+}
+
+function last_any_backup {
+  heroku pgbackups --remote $remote |
+    grep '^[ab]' |
+    cut -d ' ' -f 1 |
+    tail -n 1
+}
+
+function get_fresh_db {
+  echo 'Downloading Fresh DB...'
+  curl `heroku pgbackups:url $dbkey --remote $remote` > a.dump
+}
+
+function restore_db {
+  echo 'Restoring DB...'
+  pg_restore --clean --no-acl --no-owner -d $db_name a.dump
+}
+
+function delete_db_backup {
+  rm a.dump
+}
+
+if [ "latest" == $1 ]
+then
+  echo "Lets download and restore the latest db..."
+  dbkey=''
+else
+  if [ -z "$1" ]
+  then
+    echo "Lets download and restore the latest db..."
+    dbkey=''
+  elif [ "new" == $1 ]
+  then
+    echo "Lets download and restore a new db backup..."
+    heroku pgbackups:destroy $(last_backup) --remote $remote
+    heroku pgbackups:capture --remote $remote
+    dbkey=$(last_backup)
+  else
+    dbkey=$1
+    echo "Lets download and restore $dbkey..."
+  fi
+fi
+
+echo "DB key: $dbkey"
+
+get_fresh_db && restore_db
+
+#clean out db dump here, if you want
+# delete_db_backup
+
+echo 'Done!'

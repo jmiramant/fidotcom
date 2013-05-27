@@ -1,0 +1,58 @@
+.mod-intro
+  #side_body
+    float: right
+    width: 260px
+    overflow: hidden
+
+.inquiries
+  padding-left: 90px
+  color: $gray
+  input[type=text],
+  input[type=email],
+  textarea
+    font-size: 16px
+    width: 450px
+    padding: 5px 21px
+    @include border-radius(2)
+    font-family: $font-family
+    border: 1px solid $gray
+    @include box-shadow(inset 1px 1px 5px #EBEBEB)
+    @include transition(box-shadow 0.3s ease)
+    &:active, &:focus
+      @include box-shadow(inset 1px 1px 5px $gray-light)
+      // @include single-box-shadow(rgba(241,102, 37, 0.6), 1px, 1px, 5px, 1px, inset)
+
+  input[type=text],
+  input[type=email]
+    height: 32px
+    font-size: 16px
+
+  textarea
+    padding-top: 10px
+
+  label
+    font-size: 20px
+    font-family: $font-josefin
+    display: block
+    width: 100%
+    padding: 5px
+    margin-bottom: 5px
+    font-weight: 600
+  .field
+    margin-bottom: 15px
+
+  input[type=submit].button
+    cursor: pointer
+    border: none
+    height: 55px
+    padding: 0px 65px 0px 25px
+
+.vcard
+  margin: 15px 0
+  p
+    padding: 0
+    font-size: 16px
+.contact-side
+  h2 
+    font-family: $font-josefin
+    font-size: 24px

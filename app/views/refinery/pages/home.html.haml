@@ -1,0 +1,33 @@
+- copywriting_options(scope: 'body', phrase_type:'wysiwyg', page: @page) do
+  %section.mod-slider-home
+    %ul.slides
+      - @page.children.reject {|p| p.slug == 'error' }.each do |child|
+        %li
+          =raw render 'refinery/pages/home_slider', :locals => {:page => child}
+
+  .mod-boxes
+    %article.box_1
+      = link_to copywriting('Module 1 Link', phrase_type: 'string') do
+        =raw copywriting('Module 1 (image and text)')
+
+    %article.box_2
+      = link_to copywriting('Module 2 Link', phrase_type: 'string') do
+        =raw copywriting('Module 2 (just text)')
+
+    %figure.box_3
+      =raw copywriting('Module 3 (just image)')
+
+    %article.box_4
+      = link_to copywriting('Module 4 Link', phrase_type: 'string') do
+        =raw copywriting('Module 4 (just text)')
+
+    %figure.box_5
+      =raw copywriting('Module 5 (just image)')
+
+  %section.mod-platforms
+    %h1 The Learning Platform
+    %ul
+      %li= link_to 'Financial Education', '/financial-education'
+      %li= link_to 'Digital Education', '/digital-education'
+      %li= link_to 'Substance Abuse Prevention', '/substance-abuse-prevention'
+      %li= link_to 'Civic Education', '/civic-education'

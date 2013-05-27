@@ -1,0 +1,9 @@
+%footer.mod-footer.wrap
+  .quickies
+    = link_to 'Privacy', '/legal/privacy'
+    = link_to 'Terms of Use', '/legal/terms-of-use'
+  %ul
+    %li= link_to 'Mail', copywriting('email link', scope: :footer, phrase_type: :string, default: "mailto:info@everfi.com"), :class => 'mail'
+    %li= link_to 'Twitter', "http://twitter.com/everfi", :class => 'twitter', :target => '_new'
+    %li= link_to 'Facebook', "http://facebook.com/everfi", :class => 'facebook', :target => '_new'
+    %li= link_to 'YouTube', "http://youtube.com/user/EverFi123", :class => 'youtube', :target => '_new'

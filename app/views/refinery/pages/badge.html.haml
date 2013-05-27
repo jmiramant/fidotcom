@@ -1,0 +1,32 @@
+= content_tag :div, class: copywriting("Highlight Color", phrase_type: 'string', page: @page) do
+  %article.mod-intro.gateway
+    =raw @page.content_for("Body")  
+  
+  %section.mod-badgebox
+    %blockquote.badgebox_1
+      %header
+        =raw copywriting('Box 1 Title', scope: :body, phrase_type: 'string', page: @page)
+      %span
+        =raw copywriting("Badgebox 1", scope: :body, phrase_type: 'wysiwyg', page: @page)
+    %blockquote.badgebox_2
+      %header
+        =raw copywriting('Box 2 Title', scope: :body, phrase_type: 'string', page: @page)
+      %span
+        =raw copywriting("Badgebox 2", scope: :body, phrase_type: 'wysiwyg', page: @page)
+    %banner
+      =raw copywriting('Badgebox Section Image', scope: :body, phrase_type: 'wysiwyg', page: @page)
+    %blockquote.badgebox_3
+      %header
+        =raw copywriting('Box 3 Title', scope: :body, phrase_type: 'string', page: @page)
+      %span
+        =raw copywriting("Badgebox 3", scope: :body, phrase_type: 'wysiwyg', page: @page)
+    %blockquote.badgebox_4
+      %header
+        =raw copywriting('Box 4 Title', scope: :body, phrase_type: 'string', page: @page)
+      %span
+        =raw copywriting("Badgebox 4", scope: :body, phrase_type: 'wysiwyg', page: @page) 
+        
+    %figure
+      =raw copywriting('Badgebox Section Image 2', scope: :body, phrase_type: 'wysiwyg', page: @page)
+        
+  =render 'refinery/footer_nav'

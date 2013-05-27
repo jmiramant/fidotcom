@@ -1,0 +1,78 @@
+.mod-boxes
+  @extend .clearfix
+  margin-bottom: 2px
+
+  article,
+  figure
+    position: relative
+    float: left
+    line-height: 24px
+    color: #fff
+    background: $gray-dark
+
+    a
+      height: 296px
+      display: block
+      text-decoration: none
+
+      &:hover .more
+        @extend .more:hover
+
+    .more
+      text-decoration: underline
+
+  h1
+    margin-bottom: 20px
+    font-family: $font-josefin
+    font-size: 31px
+    font-weight: normal
+    line-height: 33.58px
+
+  p
+    margin-bottom: 20px
+
+  a
+    color: #fff
+
+  .box_1,
+  .box_2
+    a
+      height: 266px
+      padding: 30px 20px 0 38px
+
+  .box_3,
+  .box_4,
+  .box_5
+    height: 388px
+    border-top: solid 2px #fff
+
+  .box_1
+    margin-right: 2px
+
+    a
+      width: 320px
+      padding-right: 280px
+
+    img
+      top: 0
+      right: 0
+      position: absolute
+
+  .box_2 a
+    width: 302px
+    padding-right: 40px
+
+  .box_3
+    width: 329px
+
+  .box_4
+    margin: 0 2px
+
+    a
+      width: 281px
+      height: 358px
+      padding: 30px 28px 0
+      background: $gray-light
+
+  .box_5
+    width: 350px

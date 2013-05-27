@@ -1,0 +1,38 @@
+%article.mod-intro
+  =raw @page.content_for :body
+
+- copywriting_options({ :scope => 'body', :phrase_type => 'wysiwyg', :page => @page}) do
+
+  %section.mod-details
+    %h1 Our Partners
+    %section.spon-slider
+      %ul.slides
+        - @page.children.each do |child|
+          %li
+            =raw child.content_for("Body")
+
+  %section.sponsors-figures
+    %figure
+      =raw copywriting('Image 1')
+      %figcaption
+        =raw copywriting('Image 1 Caption', :phrase_type => 'string')
+    %figure
+      =raw copywriting('Image 2')
+      %figcaption
+        =raw copywriting('Image 2 Caption', :phrase_type => 'string')
+    %figure
+      =raw copywriting('Image 3')
+      %figcaption
+        =raw copywriting('Image 3 Caption', :phrase_type => 'string')
+
+  %section.mod-details.three
+    %h1 Why partner with everfi?
+
+    .box
+      =raw copywriting('Why Partner Text 1')
+    .box
+      =raw copywriting('Why Partner Text 2')
+    .box
+      =raw copywriting('Why Partner Text 3')
+
+= render 'refinery/footer_nav'
